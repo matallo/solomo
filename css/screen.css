@@ -137,42 +137,43 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   vertical-align: middle;
   content: "";
   height: 100%;
-  margin-left: -5px;
 }
 
-/* line 28, ../sass/screen.scss */
+/* line 27, ../sass/screen.scss */
 .h-valigned {
   display: inline-block;
   vertical-align: middle;
-  margin-left: 5px;
 }
 
-/* line 34, ../sass/screen.scss */
+/* line 32, ../sass/screen.scss */
 body {
   text-rendering: optimizeLegibility;
   -webkit-text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   min-width: 320px;
   font: 14px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  position: absolute;
   background: #ededed;
 }
 
-/* line 43, ../sass/screen.scss */
+/* line 44, ../sass/screen.scss */
 .inner {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  width: 100%;
+  height: 100%;
   padding: 0 10px;
 }
 
-/* line 52, ../sass/screen.scss */
+/* line 49, ../sass/screen.scss */
 .form {
-  width: 100%;
+  width: 98%;
+  margin: 0;
+  padding: 0;
 }
 
-/* line 56, ../sass/screen.scss */
+/* line 55, ../sass/screen.scss */
 .field {
   display: block;
   width: 100%;
@@ -180,10 +181,12 @@ body {
 }
 
 /* line 62, ../sass/screen.scss */
-.input {
+.input,
+.textarea {
   display: block;
   width: 100%;
   padding: 10px 5px;
+  margin: 0;
   border: 1px solid #ddd;
   font: 14px/24px "Helvetica Neue", Helvetica;
   -webkit-border-radius: 3px;
@@ -195,7 +198,36 @@ body {
   color: #333;
 }
 
-/* line 73, ../sass/screen.scss */
+/* line 74, ../sass/screen.scss */
+::-webkit-input-placeholder {
+  color: #ababab;
+}
+
+/* line 78, ../sass/screen.scss */
+:-moz-placeholder {
+  color: #ababab;
+}
+
+/* line 82, ../sass/screen.scss */
+::-moz-placeholder {
+  color: #ababab;
+}
+
+/* line 86, ../sass/screen.scss */
+:-ms-input-placeholder {
+  color: #ababab;
+}
+
+/* line 90, ../sass/screen.scss */
+.textarea {
+  color: #ababab;
+}
+/* line 93, ../sass/screen.scss */
+.textarea:focus {
+  color: #333;
+}
+
+/* line 98, ../sass/screen.scss */
 .button {
   display: block;
   border: 2px solid #8EB83F;
@@ -214,13 +246,42 @@ body {
   -o-transition: all 0.15s ease-in-out;
   transition: all 0.15s ease-in-out;
 }
-/* line 84, ../sass/screen.scss */
+/* line 109, ../sass/screen.scss */
 .button > span {
   border-radius: 50px;
   font: 14px/44px 'Proxima Nova Semibold';
 }
-/* line 89, ../sass/screen.scss */
+/* line 114, ../sass/screen.scss */
 .button:hover {
   background: #fff;
   color: #8EB83F;
+}
+
+/* line 120, ../sass/screen.scss */
+.maps {
+  width: 98%;
+  margin: 10px 0 58px;
+}
+/* line 124, ../sass/screen.scss */
+.maps li {
+  margin-bottom: 10px;
+}
+
+/* line 129, ../sass/screen.scss */
+.map {
+  width: 100%;
+}
+/* line 132, ../sass/screen.scss */
+.map img {
+  max-width: 100%;
+}
+
+/* line 137, ../sass/screen.scss */
+.maps-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #ededed;
+  padding: 10px 0;
 }
