@@ -1,1 +1,93 @@
 @import "compass/reset";
+@import "compass/css3/border-radius";
+@import "compass/css3/transition";
+@import "_fonts";
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}
+
+%clearfix:before,
+%clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+%clearfix:after { clear: both; }
+%clearfix { zoom: 1; } /* IE < 8 */
+
+.h-valign:before {
+  display: inline-block;
+  vertical-align: middle;
+  content: "";
+  height: 100%;
+  margin-left: -5px;
+}
+
+.h-valigned {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 5px;
+}
+
+body {
+  text-rendering: optimizeLegibility;
+  -webkit-text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  min-width: 320px;
+  font: 14px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background: #ededed;
+}
+
+.inner {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 0 10px;
+}
+
+.form {
+  width: 100%;
+}
+
+.field {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.input {
+  display: block;
+  width: 100%;
+  padding: 10px 5px;
+  border: 1px solid #ddd;
+  font: 14px/24px "Helvetica Neue", Helvetica;
+  @include border-radius(3px);
+  outline: none;
+  color: #333;
+}
+
+.button {
+  display: block;
+  border: 2px solid #8EB83F;
+  background: #8EB83F;
+  text-align: center;
+  @include border-radius(23px);
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  @include transition(all .15s ease-in-out);
+
+  > span {
+    border-radius: 50px;
+    font: 14px/44px 'Proxima Nova Semibold';
+  }
+
+  &:hover {
+    background: #fff;
+    color: #8EB83F;
+  }
+}
