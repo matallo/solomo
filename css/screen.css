@@ -228,6 +228,18 @@ body {
 }
 
 /* line 98, ../sass/screen.scss */
+.arrow {
+  font: 14px/44px 'Proxima Nova Semibold';
+  color: #4B80B7;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+/* line 104, ../sass/screen.scss */
+.arrow:hover {
+  color: #4B80B7;
+}
+
+/* line 109, ../sass/screen.scss */
 .button {
   display: block;
   border: 2px solid #8EB83F;
@@ -246,42 +258,73 @@ body {
   -o-transition: all 0.15s ease-in-out;
   transition: all 0.15s ease-in-out;
 }
-/* line 109, ../sass/screen.scss */
+/* line 120, ../sass/screen.scss */
 .button > span {
   border-radius: 50px;
   font: 14px/44px 'Proxima Nova Semibold';
 }
-/* line 114, ../sass/screen.scss */
+/* line 125, ../sass/screen.scss */
 .button:hover {
   background: #fff;
   color: #8EB83F;
 }
+/* line 130, ../sass/screen.scss */
+.button.secondary {
+  width: 50%;
+  border: 2px solid #4B80B7;
+  background: #fff;
+  color: #4B80B7;
+}
+/* line 136, ../sass/screen.scss */
+.button.secondary:hover {
+  background: #4B80B7;
+  color: #fff;
+}
 
-/* line 120, ../sass/screen.scss */
+/* line 143, ../sass/screen.scss */
 .maps {
   width: 98%;
   margin: 10px 0 58px;
 }
-/* line 124, ../sass/screen.scss */
+/* line 147, ../sass/screen.scss */
 .maps li {
   margin-bottom: 10px;
 }
 
-/* line 129, ../sass/screen.scss */
+/* line 152, ../sass/screen.scss */
 .map {
   width: 100%;
 }
-/* line 132, ../sass/screen.scss */
+/* line 155, ../sass/screen.scss */
 .map img {
   max-width: 100%;
 }
 
-/* line 137, ../sass/screen.scss */
-.maps-footer {
+/* line 160, ../sass/screen.scss */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #ededed;
+  padding: 10px 0;
+}
+
+/* line 168, ../sass/screen.scss */
+.footer {
   position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
   background: #ededed;
   padding: 10px 0;
+}
+
+/* line 176, ../sass/screen.scss */
+#cartodb-map {
+  position: absolute;
+  top: 68px;
+  bottom: 68px;
+  left: 0;
+  width: 100%;
 }

@@ -95,6 +95,17 @@ body {
   }
 }
 
+.arrow {
+  font: 14px/44px 'Proxima Nova Semibold';
+  color: #4B80B7;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  &:hover {
+    color: #4B80B7;
+  }
+}
+
 .button {
   display: block;
   border: 2px solid #8EB83F;
@@ -115,6 +126,18 @@ body {
     background: #fff;
     color: #8EB83F;
   }
+
+  &.secondary {
+    width: 50%;
+    border: 2px solid #4B80B7;
+    background: #fff;
+    color: #4B80B7;
+
+    &:hover {
+      background: #4B80B7;
+      color: #fff;
+    }
+  }
 }
 
 .maps {
@@ -134,10 +157,24 @@ body {
   }
 }
 
-.maps-footer {
+.header {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  background: #ededed;
+  padding: 10px 0;
+}
+
+.footer {
   position: fixed;
   bottom: 0; left: 0;
   width: 100%;
   background: #ededed;
   padding: 10px 0;
+}
+
+#cartodb-map {
+  position: absolute;
+  top: 68px; bottom: 68px; left: 0;
+  width: 100%;
 }
