@@ -1,4 +1,4 @@
-/* line 17, ../../../../../usr/local/var/rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 17, ../../../../usr/local/var/rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -20,45 +20,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../usr/local/var/rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../usr/local/var/rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../usr/local/var/rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../usr/local/var/rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../usr/local/var/rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../usr/local/var/rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../usr/local/var/rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../usr/local/var/rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../usr/local/var/rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../usr/local/var/rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../usr/local/var/rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../usr/local/var/rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../usr/local/var/rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../usr/local/var/rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../usr/local/var/rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../usr/local/var/rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
@@ -123,7 +123,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   font-weight: 200;
 }
 
-/* line 6, ../sass/screen.scss */
+/* line 6, sass/screen.scss */
 *, *:before, *:after {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -131,7 +131,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 /* IE < 8 */
-/* line 20, ../sass/screen.scss */
+/* line 20, sass/screen.scss */
 .h-valign:before {
   display: inline-block;
   vertical-align: middle;
@@ -139,13 +139,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   height: 100%;
 }
 
-/* line 27, ../sass/screen.scss */
+/* line 27, sass/screen.scss */
 .h-valigned {
   display: inline-block;
   vertical-align: middle;
 }
 
-/* line 32, ../sass/screen.scss */
+/* line 32, sass/screen.scss */
 body {
   text-rendering: optimizeLegibility;
   -webkit-text-rendering: optimizeLegibility;
@@ -160,27 +160,27 @@ body {
   background: #ededed;
 }
 
-/* line 44, ../sass/screen.scss */
+/* line 44, sass/screen.scss */
 .inner {
   height: 100%;
   padding: 0 10px;
 }
 
-/* line 49, ../sass/screen.scss */
+/* line 49, sass/screen.scss */
 .form {
   width: 98%;
   margin: 0;
   padding: 0;
 }
 
-/* line 55, ../sass/screen.scss */
+/* line 55, sass/screen.scss */
 .field {
   display: block;
   width: 100%;
   margin-bottom: 10px;
 }
 
-/* line 62, ../sass/screen.scss */
+/* line 62, sass/screen.scss */
 .input,
 .textarea {
   display: block;
@@ -198,48 +198,49 @@ body {
   color: #333;
 }
 
-/* line 74, ../sass/screen.scss */
+/* line 74, sass/screen.scss */
 ::-webkit-input-placeholder {
   color: #ababab;
 }
 
-/* line 78, ../sass/screen.scss */
+/* line 78, sass/screen.scss */
 :-moz-placeholder {
   color: #ababab;
 }
 
-/* line 82, ../sass/screen.scss */
+/* line 82, sass/screen.scss */
 ::-moz-placeholder {
   color: #ababab;
 }
 
-/* line 86, ../sass/screen.scss */
+/* line 86, sass/screen.scss */
 :-ms-input-placeholder {
   color: #ababab;
 }
 
-/* line 90, ../sass/screen.scss */
+/* line 90, sass/screen.scss */
 .textarea {
   color: #ababab;
 }
-/* line 93, ../sass/screen.scss */
+/* line 93, sass/screen.scss */
 .textarea:focus {
   color: #333;
 }
 
-/* line 98, ../sass/screen.scss */
+/* line 98, sass/screen.scss */
 .arrow {
+  display: inline-block;
   font: 14px/44px 'Proxima Nova Semibold';
   color: #4B80B7;
   text-decoration: none;
   text-transform: uppercase;
 }
-/* line 104, ../sass/screen.scss */
+/* line 105, sass/screen.scss */
 .arrow:hover {
   color: #4B80B7;
 }
 
-/* line 109, ../sass/screen.scss */
+/* line 110, sass/screen.scss */
 .button {
   display: block;
   border: 2px solid #8EB83F;
@@ -258,59 +259,58 @@ body {
   -o-transition: all 0.15s ease-in-out;
   transition: all 0.15s ease-in-out;
 }
-/* line 120, ../sass/screen.scss */
+/* line 121, sass/screen.scss */
 .button > span {
   border-radius: 50px;
   font: 14px/44px 'Proxima Nova Semibold';
 }
-/* line 125, ../sass/screen.scss */
+/* line 126, sass/screen.scss */
 .button:hover {
   background: #fff;
   color: #8EB83F;
 }
-/* line 130, ../sass/screen.scss */
+/* line 131, sass/screen.scss */
 .button.secondary {
   width: 50%;
   border: 2px solid #4B80B7;
   background: #fff;
   color: #4B80B7;
 }
-/* line 136, ../sass/screen.scss */
+/* line 137, sass/screen.scss */
 .button.secondary:hover {
   background: #4B80B7;
   color: #fff;
 }
 
-/* line 143, ../sass/screen.scss */
+/* line 144, sass/screen.scss */
 .maps {
   width: 98%;
-  margin: 10px 0 58px;
+  margin: 44px 0;
 }
-/* line 147, ../sass/screen.scss */
+/* line 148, sass/screen.scss */
 .maps li {
   margin-bottom: 10px;
 }
 
-/* line 152, ../sass/screen.scss */
+/* line 153, sass/screen.scss */
 .map {
   width: 100%;
 }
-/* line 155, ../sass/screen.scss */
+/* line 156, sass/screen.scss */
 .map img {
   max-width: 100%;
 }
 
-/* line 160, ../sass/screen.scss */
+/* line 161, sass/screen.scss */
 .header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   background: #ededed;
-  padding: 10px 0;
 }
 
-/* line 168, ../sass/screen.scss */
+/* line 168, sass/screen.scss */
 .footer {
   position: fixed;
   bottom: 0;
@@ -320,10 +320,10 @@ body {
   padding: 10px 0;
 }
 
-/* line 176, ../sass/screen.scss */
+/* line 176, sass/screen.scss */
 #cartodb-map {
   position: absolute;
-  top: 68px;
+  top: 44px;
   bottom: 68px;
   left: 0;
   width: 100%;
