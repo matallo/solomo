@@ -38,7 +38,10 @@
         center_lat: position.coords.latitude,
         center_lon: position.coords.longitude,
         zoom: 14
-      })
+      });
+
+        window.lat = position.coords.latitude;
+        window.lon = position.coords.longitude;
 
 
         // alert('Latitude: '          + position.coords.latitude          + '\n' +

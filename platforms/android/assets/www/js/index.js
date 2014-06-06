@@ -36,7 +36,6 @@ var app = {
         app.bootstrap();
     },
     bootstrap: function() {
-        alert('ok');
         // var buttonTakePicture = document.getElementById('tapTakePicture');
         // buttonTakePicture.addEventListener('click', function() {
         //     navigator.camera.getPicture(onSuccess, onFail, { quality: 50,

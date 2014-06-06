@@ -9,4 +9,7 @@
     </author>
     <content src="index.html" />
     <access origin="*" />
+    <plugin name="File" value="org.apache.cordova.FileUtils" />
+    <plugin name="FileTransfer" value="org.apache.cordova.FileTransfer" />
+    <plugin name="FileUploadOptions" value="org.apache.cordova.FileUploadOptions" />
 </widget>
