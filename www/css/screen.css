@@ -262,12 +262,10 @@ body {
 /* line 121, sass/screen.scss */
 .button > span {
   border-radius: 50px;
-  font: 14px/44px 'Proxima Nova Semibold';
+  font: 14px 'Proxima Nova Semibold';
 }
 /* line 126, sass/screen.scss */
 .button:hover {
-  background: #fff;
-  color: #8EB83F;
 }
 /* line 131, sass/screen.scss */
 .button.secondary {
