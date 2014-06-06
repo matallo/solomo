@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Tenggren</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="">
+    <link rel="canonical" href="/">
+    <link rel="stylesheet" href="css/screen.css">
+</head>
+<body>
+<div class="inner h-valign">
+    <form class="form h-valigned">
+        <img id="picture" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" />
+        <div class="field">
+            <input type="text" value="" placeholder="Title" class="input" />
+        </div>
+
+        <div class="field">
+            <textarea class="textarea">Comments (optional)</textarea>
+        </div>
+
+        <div class="field">
+            <a id="tapTakePicture" href="#" class="button secondary"><span>Take photo</span></a>
+        </div>
+    </form>
+
+    <footer class="footer">
+        <div class="inner">
+            <a href="map.html" class="button"><span>Save</span></a>
+        </div>
+    </footer>
+</div>
+<script type="text/javascript" src="cordova.js"></script>
+<script>
+    var buttonTakePicture = document.getElementById('tapTakePicture');
+    buttonTakePicture.addEventListener('click', function() {
+        navigator.camera.getPicture(onSuccess, onFail, { quality: 50,
+            destinationType: Camera.DestinationType.DATA_URL
+        });
+    }, false);
+
+    function onSuccess(imageData) {
+        var image = document.getElementById('picture');
+        image.src = "data:image/jpeg;base64," + imageData;
+        image.setAttribute('width', '100%');
+    }
+
+    function onFail(message) {
+        var image = document.getElementById('picture');
+        image.src = "data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+        image.setAttribute('width', '100%');
+    }
+</script>
+<script type="text/javascript" src="js/vendor/jquery.js"></script>
+<script type="text/javascript" src="js/capture.js"></script>
+</body>
+</html>
