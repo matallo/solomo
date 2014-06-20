@@ -1,0 +1,78 @@
+.header {
+	background: #35454B;
+	height: 70px;
+	padding: 0 15px;
+}
+	.header-inner {
+		position: relative;
+		height: 70px;
+	}
+	.header .arrow {
+		width: 48px;
+		height: 48px;
+		background: url(../img/icons/icon_menu.png) no-repeat left center;
+		overflow: hidden;
+		margin-top: 10px;
+		float:left; display: inline;
+	}
+	.header .brand {
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		height: 40px;
+		width: 117px;
+		background: url(../img/logo_inside.png) no-repeat center center;
+		margin-left: -60px;
+		margin-top: -20px;
+		display: inline-block;
+	}
+
+	.header .create {
+		width: 48px;
+		height: 48px;
+		background: url(../img/icons/icon_new.png) no-repeat right center;
+		overflow: hidden;
+		margin-top: 10px;
+		float:right; display: inline;
+	}
+
+	@media (-webkit-min-device-pixel-ratio: 2) {
+	   .header .brand {
+	       background: url('../img/logo_inside@2x.png') no-repeat;
+	       background-size:  100% 100%;
+	   }
+	}
+
+
+
+.inner{
+  background: #fff;
+  padding: 20px 0;
+}
+.maps {
+	width: 100%;
+	margin: 70px 0 0 0;
+}
+.maps li {
+	margin: 0;
+}
+.map-inner {
+	position: relative;
+}
+.maps-info {
+	position: absolute;
+	right: 20px;
+	bottom: 20px;
+}
+	.maps-info li {
+		display: inline-block;
+		margin-left: 8px;
+	}
+
+.maps li img {
+	display: block;
+}
+.maps a {
+	display: block;
+}
+

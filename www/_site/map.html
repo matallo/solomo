@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Tenggren</title>
+  <meta name="viewport" content="width=device-width">
+  <meta name="description" content="">
+  <link rel="canonical" href="/">
+  <link rel="stylesheet" href="css/screen.css">
+  <link rel="stylesheet" href="http://libs.cartocdn.com/cartodb.js/v3/themes/css/cartodb.css" />
+  <!--[if lte IE 8]>
+    <link rel="stylesheet" href="http://libs.cartocdn.com/cartodb.js/v3/themes/css/cartodb.ie.css" />
+  <![endif]-->
+</head>
+<body>
+  <header class="header">
+    <div class="inner">
+      <a href="maps.html" class="arrow"><span>Back</span></a>
+    </div>
+  </header>
+
+  <div class="inner">
+    <div id="cartodb-map"></div>
+  </div>
+
+  <footer class="footer">
+    <div class="inner">
+      <a href="capture.html" class="button"><span>Capture</span></a>
+    </div>
+  </footer>
+
+  <script src="http://libs.cartocdn.com/cartodb.js/v3/cartodb.js"></script>
+
+  <script>
+    var onLocationSuccess = function(position) {
+      cartodb.createVis('cartodb-map', 'http://trailnotes.cartodb.com/api/v2/viz/7612f790-e812-11e3-85dc-0e73339ffa50/viz.json', {
+        center_lat: position.coords.latitude,
+        center_lon: position.coords.longitude,
+        zoom: 14
+      });
+
+        window.lat = position.coords.latitude;
+        window.lon = position.coords.longitude;
+
+
+        // alert('Latitude: '          + position.coords.latitude          + '\n' +
+        //       'Longitude: '         + position.coords.longitude         + '\n' +
+        //       'Altitude: '          + position.coords.altitude          + '\n' +
+        //       'Accuracy: '          + position.coords.accuracy          + '\n' +
+        //       'Altitude Accuracy: ' + position.coords.altitudeAccuracy  + '\n' +
+        //       'Heading: '           + position.coords.heading           + '\n' +
+        //       'Speed: '             + position.coords.speed             + '\n' +
+        //       'Timestamp: '         + position.timestamp                + '\n');
+    };
+
+    // onError Callback receives a PositionError object
+    //
+    function onLocationError(error) {
+        alert('code: '    + error.code    + '\n' +
+              'message: ' + error.message + '\n');
+    }
+
+    (function() {
+      navigator.geolocation.getCurrentPosition(onLocationSuccess, onLocationError, { enableHighAccuracy: true });
+    })();
+  </script>
+</body>
+</html>
